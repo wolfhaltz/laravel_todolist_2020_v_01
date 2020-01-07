@@ -14,3 +14,15 @@ just to challenge myself in a monday night haha.
 So, may probably I'll not finish this project so soon.
 ¯\_(ツ)_/¯ 
 </p>
+
+<p>Btw, to run the project, you need to:</p>
+<ul>
+    <li><strong>composer install</strong></li>
+    <li>copy the env.example and paste just with <strong>.env</strong> name</li>
+    <li><strong>configure your Mamp and Sequel or similar stuff to do the DB stuff ;) </strong></li>
+    <li><strong>php artisan key:generate</strong></li>
+    <li><strong>php artisan serve</strong></li>
+    <li>Enjoy! And feel free to make a commit to increase this! ;D</li>
+</ul>
+
+<h6>That's all folks!</h6>
