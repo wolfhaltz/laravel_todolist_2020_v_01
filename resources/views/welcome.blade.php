@@ -72,7 +72,7 @@
             }
         </style>
     </head>
-    <body style="background-image: url('images/welcome_page_bg.jpg'); background-size: cover; background-position: center;">
+    <body style="background-image: url('images/welcome_page_bg.png'); background-size: cover; background-position: center;">
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md font_indie_flower">
@@ -86,12 +86,12 @@
                         </p>
                     </div>
                     @auth
-                        <a href="{{ url('/home') }}" class="font_indie_flower">Back to home!</a>
+                        <a href="{{ url('/home') }}" class="font_indie_flower almost_gray_bg_to_texts">Back to home!</a>
                     @else
-                        <a href="{{ route('login') }}" class="font_indie_flower">Login</a>
+                        <a href="{{ route('login') }}" class="font_indie_flower almost_gray_bg_to_texts">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="font_indie_flower">Register</a>
+                            <a href="{{ route('register') }}" class="font_indie_flower almost_gray_bg_to_texts">Register</a>
                         @endif
                     @endauth
                 </div>

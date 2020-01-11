@@ -1,3 +1,12 @@
+
+/* GENERAL STUFF */
+.color_darkred { color: darkred; }
+
+
+/* BTNS */
+.default-btn { background-color: black!important; border:none!important; color:white!important; }
+.default-btn:hover { background-color: darkred!important;}
+
 /* AUTH PAGE */
 .btn-auth { background-color: black!important; border:none!important; }
 .btn-auth:hover { background-color: darkred!important;}
