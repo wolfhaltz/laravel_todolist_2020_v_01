@@ -1,3 +1,9 @@
+/* AUTH PAGE */
+.btn-auth { background-color: black!important; border:none!important; }
+.btn-auth:hover { background-color: darkred!important;}
+
+.bg-almost-white{ background-color: #0000006b!important;}
+
 /* custom bg colors */
 .almost_gray_bg_to_texts{ background-color: #000000ad; }
 

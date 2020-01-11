@@ -9,6 +9,9 @@
 
     <title>{{ config('app.name', 'TODO 2020') }}</title>
 
+    <!-- STYLE -->
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+
     <!-- LARAVEL -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -21,12 +24,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-image: url('images/auth_bg.jpg'); background-size: cover; ">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-almost-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <a class="navbar-brand text-white" href="{{ url('/') }}">
+                    {{ config('app.name', 'TODO') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -43,11 +46,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link text-white" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link text-white" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
@@ -77,6 +80,15 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+
+    </div>
+
+    <div class="bottom_left">
+        <p class="credit">Credits of background image:</p>
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://pixabay.com/images/id-869200/" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Foundry Co">
+        <span style="display:inline-block;padding:2px 3px">Foundry Co</span>
+        </a>
     </div>
 
     <!-- Optional JavaScript -->
