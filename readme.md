@@ -12,7 +12,7 @@
 
 <img src="public/images/todo_01.png" style="width: 400px;"/>
 
-<img src="public/images/todo.gif" style="width: 400px;"/>
+<img src="public/todo.gif" style="width: 400px;"/>
 
 <p>I need to do the edit part of the CRUD, but man, I did this in a few hours
 just to challenge myself in a monday night haha.
