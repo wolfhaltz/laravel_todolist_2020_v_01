@@ -1,0 +1,18 @@
+/* custom bg colors */
+.almost_gray_bg_to_texts{ background-color: #000000ad; }
+
+/* FONTS */
+.font_indie_flower{ font-family: 'Indie Flower', cursive; }
+.font_arvo{ font-family: 'Arvo', serif; }
+
+/* WELCOME PAGE */
+.bottom_left {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    margin-bottom:1%;
+}
+
+.credit{
+    font-size: 12px;
+}

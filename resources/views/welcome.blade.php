@@ -4,16 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>TODO List</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet">
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: white;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -49,13 +53,18 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: white;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 18px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+            }
+
+            .links > a:hover {
+                text-decoration: line-through;
+                text-decoration-color: red;
             }
 
             .m-b-md {
@@ -63,37 +72,38 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background-image: url('images/welcome_page_bg.jpg'); background-size: cover; background-position: center;">
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="title m-b-md font_indie_flower">
+                    TODO!
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <div>
+                        <p class="font_arvo almost_gray_bg_to_texts">
+                            How about organize your tasks? You can do it with our program!
+                        </p>
+                    </div>
+                    @auth
+                        <a href="{{ url('/home') }}" class="font_indie_flower">Back to home!</a>
+                    @else
+                        <a href="{{ route('login') }}" class="font_indie_flower">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="font_indie_flower">Register</a>
+                        @endif
+                    @endauth
                 </div>
             </div>
         </div>
+
+        <div class="bottom_left">
+            <p class="credit">Credits of background image:</p>
+            <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://pixabay.com/images/id-620817/" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from William Iven">
+            <span style="display:inline-block;padding:2px 3px">William Iven</span>
+            </a>
+        </div>
+
     </body>
 </html>
