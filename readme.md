@@ -9,9 +9,10 @@
 
 ## About the Project
 <p>This is a simple TODO project.</p>
+<img src="public/images/welcome_page_bg.png" style="width: 400px;"/>
 
 <video width="400" controls>
-  <source src="{{ asset('todo.mp4') }}" type="video/mp4">
+  <source src="public/todo.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
