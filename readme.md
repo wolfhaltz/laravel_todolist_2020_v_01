@@ -9,7 +9,10 @@
 
 ## About the Project
 <p>This is a simple TODO project with Laravel.</p>
+
 <img src="public/images/todo_01.png" style="width: 400px;"/>
+
+<img src="public/images/todo.gif" style="width: 400px;"/>
 
 <p>I need to do the edit part of the CRUD, but man, I did this in a few hours
 just to challenge myself in a monday night haha.
