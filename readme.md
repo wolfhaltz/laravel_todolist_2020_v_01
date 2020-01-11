@@ -9,6 +9,12 @@
 
 ## About the Project
 <p>This is a simple TODO project.</p>
+
+<video width="400" controls>
+  <source src="{{ asset('todo.mp4') }}" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
 <p>I need to do the edit part of the CRUD, but man, I did this in a few hours
 just to challenge myself in a monday night haha.
 So, may probably I'll not finish this project so soon.
