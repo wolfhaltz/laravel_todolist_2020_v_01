@@ -12,15 +12,10 @@
 
 <img src="public/images/todo_01.png" style="width: 400px;"/>
 
-<img src="public/todo.gif" style="width: 400px;"/>
+<p>See a little about the project:</p>
+<img src="public/todo.gif" style="width: 100%;"/>
 
-<p>I need to do the edit part of the CRUD, but man, I did this in a few hours
-just to challenge myself in a monday night haha.
-So, may probably I'll not finish this project so soon.
-¯\_(ツ)_/¯ 
-</p>
-
-<p>Btw, to run the project, you need to:</p>
+<p>To run the project, you need to:</p>
 <ul>
     <li><strong>composer install</strong></li>
     <li>copy the <strong>env.example</strong> and paste just with <strong>.env</strong> name</li>
